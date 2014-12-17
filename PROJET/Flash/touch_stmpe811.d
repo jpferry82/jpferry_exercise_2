@@ -1,0 +1,9 @@
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\MDK\Boards\ST\STM32F429I-Discovery\Common\Touch_STMPE811.c
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS_RTX\INC\cmsis_os.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\MDK\Boards\ST\STM32F429I-Discovery\Common\STMPE811.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Driver\Include\Driver_I2C.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Driver\Include\Driver_Common.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\flash\touch_stmpe811.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\6.2.0\Board\Board_Touch.h
