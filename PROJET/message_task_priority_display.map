@@ -1,0 +1,192 @@
+Product: MDK-ARM Lite 5.10
+Component: ARM Compiler 5.04 update 1 (build 49)
+Tool: armlink [5040049]
+
+==============================================================================
+
+Section Cross References
+
+    main_message_task.o(.text) refers to system_stm32f4xx.o(.text) for SystemInit
+    main_message_task.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_Init
+    system_stm32f4xx.o(.text) refers to system_stm32f4xx.o(.data) for SystemCoreClock
+    startup_stm32f429xx.o(RESET) refers to startup_stm32f429xx.o(STACK) for __initial_sp
+    startup_stm32f429xx.o(RESET) refers to startup_stm32f429xx.o(.text) for Reset_Handler
+    startup_stm32f429xx.o(.text) refers to system_stm32f4xx.o(.text) for SystemInit
+    startup_stm32f429xx.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    croutine.o(.text) refers to list.o(.text) for vListInitialise
+    croutine.o(.text) refers to tasks.o(.text) for xTaskGetTickCount
+    croutine.o(.text) refers to croutine.o(.bss) for pxReadyCoRoutineLists
+    croutine.o(.text) refers to croutine.o(.data) for pxDelayedCoRoutineList
+    event_groups.o(.text) refers to list.o(.text) for vListInitialise
+    event_groups.o(.text) refers to tasks.o(.text) for vTaskSuspendAll
+    queue.o(.text) refers to tasks.o(.text) for xTaskRemoveFromEventList
+    queue.o(.text) refers to list.o(.text) for vListInitialise
+    queue.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    queue.o(.text) refers to queue.o(.bss) for xQueueRegistry
+    tasks.o(.text) refers to list.o(.text) for vListInitialise
+    tasks.o(.text) refers to memseta.o(.text) for __aeabi_memset
+    tasks.o(.text) refers to crhook.o(.text) for vApplicationTickHook
+    tasks.o(.text) refers to tasks.o(.bss) for pxReadyTasksLists
+    tasks.o(.text) refers to tasks.o(.data) for pxDelayedTaskList
+    tasks.o(.text) refers to main_message_task.o(.text) for vApplicationStackOverflowHook
+    tasks.o(.text) refers to memcmp.o(.text) for memcmp
+    tasks.o(.text) refers to tasks.o(.constdata) for ucExpectedStackBytes
+    tasks.o(.text) refers to timers.o(.text) for xTimerCreateTimerTask
+    timers.o(.text) refers to list.o(.text) for vListInsert
+    timers.o(.text) refers to tasks.o(.text) for xTaskGetSchedulerState
+    timers.o(.text) refers to queue.o(.text) for xQueueGenericSend
+    timers.o(.text) refers to timers.o(.data) for pxOverflowTimerList
+    timers.o(.text) refers to timers.o(.bss) for xActiveTimerList1
+    altblckq.o(.text) refers to queue.o(.text) for xQueueGenericCreate
+    altblckq.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    altblckq.o(.text) refers to altblckq.o(.data) for sBlockingConsumerCount
+    altblock.o(.text) refers to tasks.o(.text) for vTaskSuspend
+    altblock.o(.text) refers to queue.o(.text) for xQueueGenericCreate
+    altblock.o(.text) refers to altblock.o(.data) for xRunIndicator
+    altpollq.o(.text) refers to tasks.o(.text) for vTaskDelay
+    altpollq.o(.text) refers to queue.o(.text) for uxQueueMessagesWaiting
+    altpollq.o(.text) refers to altpollq.o(.data) for xPollingProducerCount
+    altqtest.o(.text) refers to tasks.o(.text) for vTaskSuspend
+    altqtest.o(.text) refers to queue.o(.text) for uxQueueMessagesWaiting
+    altqtest.o(.text) refers to altqtest.o(.data) for xErrorDetected
+    blockq.o(.text) refers to queue.o(.text) for xQueueGenericReceive
+    blockq.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    blockq.o(.text) refers to blockq.o(.data) for sBlockingConsumerCount
+    blocktim.o(.text) refers to tasks.o(.text) for vTaskSuspend
+    blocktim.o(.text) refers to queue.o(.text) for xQueueGenericSend
+    blocktim.o(.text) refers to blocktim.o(.data) for xRunIndicator
+    comtest.o(.text) refers to tasks.o(.text) for xTaskGetTickCount
+    comtest.o(.text) refers to comtest.o(.data) for xPort
+    comtest_strings.o(.text) refers to tasks.o(.text) for xTaskGetTickCount
+    comtest_strings.o(.text) refers to timers.o(.text) for xTimerGenericCommand
+    comtest_strings.o(.text) refers to comtest_strings.o(.data) for xStringLength
+    countsem.o(.text) refers to queue.o(.text) for xQueueGenericSend
+    countsem.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    countsem.o(.text) refers to countsem.o(.data) for xErrorDetected
+    countsem.o(.text) refers to countsem.o(.bss) for xParameters
+    crflash.o(.text) refers to croutine.o(.text) for vCoRoutineAddToDelayedList
+    crflash.o(.text) refers to queue.o(.text) for xQueueGenericCreate
+    crflash.o(.text) refers to crflash.o(.data) for xFlashQueue
+    crflash.o(.text) refers to crflash.o(.constdata) for xFlashRates
+    crhook.o(.text) refers to queue.o(.text) for xQueueGenericCreate
+    crhook.o(.text) refers to croutine.o(.text) for xCoRoutineCreate
+    crhook.o(.text) refers to crhook.o(.bss) for uxReceivedValue
+    crhook.o(.text) refers to crhook.o(.data) for xCoRoutineErrorDetected
+    death.o(.text) refers to tasks.o(.text) for vTaskDelay
+    death.o(.text) refers to death.o(.data) for xCreatedTask
+    dynamic.o(.text) refers to tasks.o(.text) for vTaskSuspendAll
+    dynamic.o(.text) refers to queue.o(.text) for xQueueGenericReceive
+    dynamic.o(.text) refers to dynamic.o(.data) for xSuspendedTestQueue
+    eventgroupsdemo.o(.text) refers to tasks.o(.text) for xTaskGetCurrentTaskHandle
+    eventgroupsdemo.o(.text) refers to event_groups.o(.text) for xEventGroupWaitBits
+    eventgroupsdemo.o(.text) refers to eventgroupsdemo.o(.data) for xSyncTask1
+    flash.o(.text) refers to tasks.o(.text) for xTaskGetTickCount
+    flash.o(.text) refers to flash.o(.data) for uxFlashTaskNumber
+    flash_timer.o(.text) refers to timers.o(.text) for pvTimerGetTimerID
+    flash_timer.o(.text) refers to tasks.o(.text) for xTaskGetTickCount
+    flop.o(.text) refers to dfltui.o(.text) for __aeabi_ui2d
+    flop.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    flop.o(.text) refers to dadd.o(.text) for __aeabi_dadd
+    flop.o(.text) refers to fabs.o(i.__hardfp_fabs) for __hardfp_fabs
+    flop.o(.text) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    flop.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    flop.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    flop.o(.text) refers to flop.o(.data) for usTaskCheck
+    genqtest.o(.text) refers to tasks.o(.text) for vTaskSuspend
+    genqtest.o(.text) refers to queue.o(.text) for xQueueGenericReceive
+    genqtest.o(.text) refers to genqtest.o(.data) for xErrorDetected
+    integer.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    integer.o(.text) refers to integer.o(.data) for xTaskCheck
+    pollq.o(.text) refers to queue.o(.text) for xQueueGenericSend
+    pollq.o(.text) refers to tasks.o(.text) for vTaskDelay
+    pollq.o(.text) refers to pollq.o(.data) for xPollingProducerCount
+    qpeek.o(.text) refers to queue.o(.text) for xQueueGenericReceive
+    qpeek.o(.text) refers to tasks.o(.text) for vTaskSuspend
+    qpeek.o(.text) refers to qpeek.o(.data) for xErrorDetected
+    queueoverwrite.o(.text) refers to queue.o(.text) for xQueueGenericCreate
+    queueoverwrite.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    queueoverwrite.o(.text) refers to queueoverwrite.o(.data) for ulLoopCounter
+    queueset.o(.text) refers to queue.o(.text) for xQueueGenericCreate
+    queueset.o(.text) refers to tasks.o(.text) for vTaskResume
+    queueset.o(.text) refers to queueset.o(.data) for ulExpectedReceivedFromISR
+    queueset.o(.text) refers to queueset.o(.bss) for xQueues
+    recmutex.o(.text) refers to queue.o(.text) for xQueueTakeMutexRecursive
+    recmutex.o(.text) refers to tasks.o(.text) for eTaskGetState
+    recmutex.o(.text) refers to recmutex.o(.data) for xMutex
+    semtest.o(.text) refers to queue.o(.text) for xQueueGenericReceive
+    semtest.o(.text) refers to tasks.o(.text) for vTaskDelay
+    semtest.o(.text) refers to semtest.o(.data) for sNextCheckVariable
+    sp_flop.o(.text) refers to f2d.o(.text) for __aeabi_f2d
+    sp_flop.o(.text) refers to fabs.o(i.__hardfp_fabs) for __hardfp_fabs
+    sp_flop.o(.text) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    sp_flop.o(.text) refers to tasks.o(.text) for xTaskGenericCreate
+    sp_flop.o(.text) refers to sp_flop.o(.bss) for usTaskCheck
+    timerdemo.o(.text) refers to timers.o(.text) for xTimerIsTimerActive
+    timerdemo.o(.text) refers to tasks.o(.text) for xTaskGetTickCount
+    timerdemo.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    timerdemo.o(.text) refers to timerdemo.o(.bss) for xAutoReloadTimers
+    timerdemo.o(.text) refers to timerdemo.o(.data) for xTestStatus
+    timerdemo.o(.text) refers to strcmp.o(.text) for strcmp
+    intqueue.o(.text) refers to queue.o(.text) for xQueueGenericSend
+    intqueue.o(.text) refers to tasks.o(.text) for eTaskGetState
+    intqueue.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    intqueue.o(.text) refers to intqueue.o(.data) for xErrorLine
+    intqueue.o(.text) refers to intqueue.o(.bss) for ucNormallyFullReceivedValues
+    buttons_f429discovery.o(.text) refers to stm32f4xx_hal_gpio.o(.text) for HAL_GPIO_Init
+    led_f429discovery.o(.text) refers to stm32f4xx_hal_gpio.o(.text) for HAL_GPIO_Init
+    led_f429discovery.o(.text) refers to led_f429discovery.o(.constdata) for LED_PIN
+    spi_stm32f4xx.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    spi_stm32f4xx.o(.text) refers to stm32f4xx_hal_gpio.o(.text) for HAL_GPIO_Init
+    spi_stm32f4xx.o(.text) refers to stm32f4xx_hal_cortex.o(.text) for HAL_NVIC_DisableIRQ
+    spi_stm32f4xx.o(.text) refers to spi_stm32f4xx.o(.constdata) for DriverVersion
+    spi_stm32f4xx.o(.text) refers to stm32f4xx_hal_dma.o(.text) for HAL_DMA_Abort
+    stm32f4xx_hal.o(.text) refers to stm32f4xx_hal_rcc.o(.text) for HAL_RCC_GetHCLKFreq
+    stm32f4xx_hal.o(.text) refers to stm32f4xx_hal_cortex.o(.text) for HAL_SYSTICK_Config
+    stm32f4xx_hal.o(.text) refers to stm32f4xx_hal.o(.data) for uwTick
+    stm32f4xx_hal_pwr_ex.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_rtc.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_rtc.o(.text) refers to stm32f4xx_hal_rtc_ex.o(.text) for HAL_RTCEx_AlarmBEventCallback
+    stm32f4xx_hal_rtc_ex.o(.text) refers to stm32f4xx_hal_rtc.o(.text) for RTC_Bcd2ToByte
+    stm32f4xx_hal_rtc_ex.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_dma.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_dma2d.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_rcc.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_rcc.o(.text) refers to stm32f4xx_hal_gpio.o(.text) for HAL_GPIO_Init
+    stm32f4xx_hal_rcc.o(.text) refers to stm32f4xx_hal_rcc.o(.constdata) for APBAHBPrescTable
+    stm32f4xx_hal_rcc.o(.text) refers to system_stm32f4xx.o(.data) for SystemCoreClock
+    stm32f4xx_hal_rcc_ex.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_spi.o(.text) refers to stm32f4xx_hal.o(.text) for HAL_GetTick
+    stm32f4xx_hal_spi.o(.text) refers to stm32f4xx_hal_dma.o(.text) for HAL_DMA_Start_IT
+    fabs.o(i.__hardfp_fabs) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fabs.o(i.__softfp_fabs) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fabs.o(i.fabs) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f429xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f429xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main_message_task.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main_message_task.o(.text) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
