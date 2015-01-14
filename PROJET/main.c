@@ -8,7 +8,7 @@
 
  * Example: This exemple illustrates task priority and task synchronization
 
- *----------------------------------------------------------------------------
+modification *----------------------------------------------------------------------------
 
  */
 
