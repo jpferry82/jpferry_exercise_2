@@ -6,6 +6,8 @@
 
  * Author: JP. FERRY
 
+ * Modification by Laurent
+
  * Example: This exemple illustrates task priority and task synchronization
 
  *----------------------------------------------------------------------------
