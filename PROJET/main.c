@@ -23,3 +23,7 @@
 #include "timers.h"
 
 #include "semphr.h"
+
+void main()
+{
+}
